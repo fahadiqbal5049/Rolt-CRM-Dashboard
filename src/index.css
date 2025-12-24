@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #18181b;
+}
+
+@theme {
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #e4e4e7;
+  --color-neutral-400: #71717a;
+  --color-neutral-500: #3f3f46;
+  --color-neutral-600: #27272a;
+
+  --color-gray-400: #18181b;
+  --color-gray-500: #20202040;
+
+  --color-red-500: #7f1d1d;
+
+  --color-green-500: #22c55e;
+  --color-orange-400: #ef4444;
+
+  /* --color-primary: var(--color-neutral-50);
+  --color-main-bg: var(--color-gray-400);
+  --color-foreground: var(--color-neutral-600);
+  --color-success: var(--color-green-500); */
+
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-cmd: 880px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1600px;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+/* gradients ------------------------> */
+
+/* gradients ends here --------------------> */
+
+/* ------------- Customized scrollbar  ------------ */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+:-webkit-scrollbar-track {
+  background: #f3f4f6;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 10px;
+}
+
+.table-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.table-scrollbar:-webkit-scrollbar-track {
+  background: #f3f4f6;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.table-scrollbar::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.white-circle {
+  position: relative;
+}
+
+.white-circle img {
+  position: relative;
+  z-index: 50;
+}
+
+.white-circle::before {
+  content: "";
+  position: absolute;
+  top: -110px;
+  left: 12px;
+  width: 1px;
+  height: 120px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  z-index: 40;
+}
